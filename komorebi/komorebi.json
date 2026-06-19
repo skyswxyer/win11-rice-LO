@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.38/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "transparency": true,
+  "transparency_alpha": 245,
+  "default_workspace_padding": 3,
+  "default_container_padding": 3,
+  "mouse_follows_focus": false,
+
+  "animation": {
+    "enabled": true,
+    "duration": 400,
+    "fps": 120,
+    "style": {
+        "movement":"EaseOutBack",
+        "transparency": "Linear"
+      }
+    },
+
+  "border_implementation": "Windows",
+  "border": false,
+  "border_width": 0,
+  "border_offset": 0,
+  "border_style": "Square",
+  "border_colours": {
+      "single": "#777cbf",
+      "unfocused": "#5c6180",
+      "floating": "#7179C8",
+      "monocle": "#a159ff"
+    },
+
+  "monitors": [
+      {
+        "workspaces": [
+          {
+            "name": "I",
+            "layout": "BSP"
+          },
+          {
+            "name": "II",
+            "layout": "Grid"
+          },
+          {
+            "name": "III",
+            "layout": "HorizontalStack"
+          }
+        ]
+      },
+      {
+        "workspaces": [
+          {
+            "name": "-",
+            "layout": "BSP"
+          },
+          {
+            "name": "--",
+            "layout": "Grid"
+          },
+          {
+            "name": "---",
+            "layout": "HorizontalStack"
+          }
+    
+        ]
+      }
+    ],
+
+  "floating_applications": [
+
+  ],
+
+  "window_rules": [
+
+  ],
+
+ "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "WHKD Keybinds",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "Photos.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Files.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "HuntGame.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "WizTree",
+      "matching_strategy": "Contains"
+    }
+  ],
+
+  "display_index_preferences": {
+    "0": "AOCB466-5&62d67cc&0&UID28929",
+    "1": "ACR0757-5&62d67cc&0&UID28928"
+  }
+}
