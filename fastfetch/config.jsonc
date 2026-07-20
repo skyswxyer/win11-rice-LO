@@ -14,9 +14,9 @@
       "8": "#8648d6"
     },
     "padding": {
-      "top": 1,          // Top padding
-      "left": 0,         // Left padding
-      "right": 3        // Right padding
+      "top": 1,
+      "left": 0,
+      "right": 3
     }
   },
   "display": {
@@ -45,12 +45,7 @@
         },
         {
             "type": "display",
-            "key": "├─󰍹 ",
-            "keyColor": "#5351ff"
-        },
-        {
-            "type": "sound",
-            "key": "╰─ ",
+            "key": "╰─󰍹 ",
             "keyColor": "#5351ff"
         },
         "break",

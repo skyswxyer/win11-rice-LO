@@ -18,8 +18,8 @@
     --surface1: #313149;
     --surface0: #20202e;
     --hover: #3a3b7e71;
-    --base: rgba(17, 17, 27, 0.5);
-    --popup_base: rgba(32, 33, 66, 0.4);
+    --base: rgba(30, 32, 56, 0.9);
+    --popup_base: rgba(32, 33, 66, 0.8);
     --basetransparent: rgba(19, 19, 32, 0.5);
     --winbutton:rgba(122, 120, 245, 0.15);
     --winbutton2: #4746aa;
@@ -423,16 +423,16 @@
     background-color: var(--basetransparent);
     border-radius: 4px;
     border: 1px solid var(--border);
-    padding: 0 4px;
+    padding: 0;
 }
 .taskbar-widget .app-container {
     margin: 0px;
-    border-radius: 4px;
     padding: 0 4px;
 }
 .taskbar-widget .app-container.foreground {
     background-color: var(--overlay0);
     border-radius: 4px;
+    padding: 0 4px;
 }
 .taskbar-widget .app-container.flashing {
     background-color: var(--red);
@@ -1141,11 +1141,9 @@
     color: var(--subtext1);
 }
 .volume-widget .icon{
-    padding: 1px 2px 0 2px;
-    color: var(--blue2);
-}
-.volume-widget .label{
-    padding: 0 2px 0 0;
+    font-size: 12px;
+    padding: 2px 2px 0 2px;
+    color: var(--sky);
 }
 .volume-widget:hover {
     background-color: var(--hover);

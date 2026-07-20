@@ -12,7 +12,7 @@
   "animation": {
     "enabled": true,
     "duration": 400,
-    "fps": 120,
+    "fps": 200,
     "style": {
         "movement":"EaseOutBack",
         "transparency": "Linear"
@@ -44,23 +44,39 @@
           },
           {
             "name": "III",
-            "layout": "HorizontalStack"
+            "layout": "Grid"
+          },
+          {
+            "name": "IV",
+            "layout": "Grid"
+          },
+          {
+            "name": "V",
+            "layout": "Grid"
           }
         ]
       },
       {
         "workspaces": [
           {
-            "name": "-",
+            "name": "1",
             "layout": "BSP"
           },
           {
-            "name": "--",
+            "name": "2",
             "layout": "Grid"
           },
           {
-            "name": "---",
-            "layout": "HorizontalStack"
+            "name": "3",
+            "layout": "Grid"
+          },
+          {
+            "name": "4",
+            "layout": "Grid"
+          },
+          {
+            "name": "5",
+            "layout": "Grid"
           }
     
         ]
@@ -99,6 +115,11 @@
     {
       "kind": "Title",
       "id": "WizTree",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "PineconeMC",
       "matching_strategy": "Contains"
     }
   ],
