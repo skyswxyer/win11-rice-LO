@@ -15,7 +15,7 @@ rendering_backend: V2
 # Global configuration options
 global:
   # border_width: Width of the border (in pixels)
-  border_width: 1
+  border_width: 2
 
   # border_offset: Offset of the border from the window edges (in pixels)
   #   - Negative values shrink the border inwards
@@ -28,7 +28,7 @@ global:
   #   - Round: Fully rounded corners
   #   - RoundSmall: Slightly rounded corners
   #   - Or specify any numeric value for a custom radius
-  border_radius: RoundSmall
+  border_radius: Square
 
   # border_z_order: Z-order of the border relative to its window. Supported values:
   #   - AboveWindow: Place the border above its window
@@ -87,11 +87,13 @@ global:
   #       Each value (dark/light) can be a hex code, "accent", or a gradient.
   #       Borders automatically update when the system theme changes.
   active_color:
-    colors: ["#5351ff", "#717df0"]
-    direction: 45deg
+    colors: ["#2e66e8", "#9d92d6"]
+    direction:
+      start: [0.0, 1.0]
+      end: [1.0, 0.0]
 
   inactive_color:
-    colors: ["#40455a", "#313149"]
+    colors: ["#30304f", "#363c69"]
     direction:
       start: [0.0, 1.0]
       end: [1.0, 0.0]
@@ -101,8 +103,8 @@ global:
   #   - inactive_color is used for komorebi's "Unfocused" window kind
   komorebi_colors:
     stack_color: "#e762b7"
-    monocle_color: "#717df0"
-    floating_color: "#5351ff"
+    monocle_color: "#5436eb"
+    floating_color: "#2e66e8"
     enabled: True
 
   # animations: Configure animation behavior for window borders
@@ -129,7 +131,7 @@ global:
   animations:
     active:
       - type: ReverseSpiral
-        duration: 1800
+        duration: 10000
         easing: Linear
 
       - type: Fade
@@ -138,7 +140,7 @@ global:
 
     inactive:
       - type: Spiral
-        duration: 1800
+        duration: 10000
         easing: Linear
 
       - type: Fade
@@ -146,7 +148,7 @@ global:
         easing: EaseInOutQuad
 
     fps: 60
-    enabled: False
+    enabled: True
 
   # effects: Configure visual effects for window borders
   #   active: Effects for active windows
