@@ -1,4 +1,3 @@
-# Minimal profile: UTF‑8 + Oh My Posh (if installed) + Fastfetch with explicit config path
 Set-Location $HOME
 try {
     [Console]::InputEncoding  = [System.Text.Encoding]::UTF8
@@ -9,8 +8,6 @@ try {
 
 Clear-Host
 
-# Force Fastfetch to use YOUR config every time (bypass path confusion)
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
     fastfetch -c "C:/Users/user/.config/fastfetch/config.jsonc"
 }
-Set-Alias btop btop4win
