@@ -90,7 +90,7 @@ widgets:
       popup:
         width: 650
         height: 400
-        blur: true
+        blur: false
         round_corners: true
         round_corners_type: small
         border_color: "system"
@@ -152,7 +152,7 @@ widgets:
         on_middle: 'next_layout'
         on_right: 'prev_layout'
       layout_menu:
-        blur: true
+        blur: false
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
