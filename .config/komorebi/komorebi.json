@@ -35,30 +35,6 @@
       {
         "workspaces": [
           {
-            "name": "I",
-            "layout": "BSP"
-          },
-          {
-            "name": "II",
-            "layout": "Grid"
-          },
-          {
-            "name": "III",
-            "layout": "Grid"
-          },
-          {
-            "name": "IV",
-            "layout": "Grid"
-          },
-          {
-            "name": "V",
-            "layout": "Grid"
-          }
-        ]
-      },
-      {
-        "workspaces": [
-          {
             "name": "1",
             "layout": "BSP"
           },
@@ -76,6 +52,30 @@
           },
           {
             "name": "5",
+            "layout": "Grid"
+          }
+        ]
+      },
+      {
+        "workspaces": [
+          {
+            "name": "6",
+            "layout": "BSP"
+          },
+          {
+            "name": "7",
+            "layout": "Grid"
+          },
+          {
+            "name": "8",
+            "layout": "Grid"
+          },
+          {
+            "name": "9",
+            "layout": "Grid"
+          },
+          {
+            "name": "10",
             "layout": "Grid"
           }
     
