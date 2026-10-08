@@ -785,6 +785,23 @@
 */
 
 /* 
+--------------------------
+---- Audio visualizer ----
+--------------------------
+*/
+/* .audio-visualizer-widget {
+    padding: 0;
+    margin: 0;
+}
+.audio-visualizer-widget .widget-container {
+    padding: 0;
+    margin: 0;
+} */
+.audio-visualizer-widget .audio-visualizer-canvas {
+    -qproperty-fillbrush: linear-gradient(to top, #8A9AFF, #8A8AFF, #C38AFF);
+}
+
+/* 
 ----------------------------
 ---- Media-Widget-Popup ----
 ----------------------------

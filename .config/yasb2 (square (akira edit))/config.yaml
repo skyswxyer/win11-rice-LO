@@ -3,11 +3,13 @@
 watch_stylesheet: true
 watch_config: true
 debug: false
+update_check: true
+
 komorebi:
   start_command: 'komorebic start --config "C:\Users\Nyrn\.config\komorebi\komorebi.json" --whkd'
   stop_command: 'komorebic stop --whkd'
   reload_command: 'komorebic stop --whkd && komorebic start --config "C:\Users\Nyrn\.config\komorebi\komorebi.json" --whkd'
-update_check: true
+
 bars:
   primary-bar:
     enabled: true
@@ -32,11 +34,11 @@ bars:
       hide_on_fullscreen: true
     dimensions:
       width: 100%
-      height: 28
+      height: 30
     padding:
       top: 0
       left: 0
-      bottom: -1
+      bottom: 0
       right: 0
     widgets:
       left: 
@@ -48,7 +50,7 @@ bars:
         - clock
         - open-meteo
       right:
-        - cava
+        - audio_visualizer
         - media
         - cpu
         - gpu
@@ -58,8 +60,8 @@ bars:
         - wallpapers
         - notifications
         - power_menu
-widgets:
 
+widgets:
   quick_launch:
     type: yasb.quick_launch.QuickLaunchWidget
     options:
@@ -90,7 +92,7 @@ widgets:
       popup:
         width: 650
         height: 400
-        blur: false
+        blur: true
         round_corners: true
         round_corners_type: small
         border_color: "system"
@@ -152,7 +154,7 @@ widgets:
         on_middle: 'next_layout'
         on_right: 'prev_layout'
       layout_menu:
-        blur: false
+        blur: true
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
@@ -275,20 +277,33 @@ widgets:
           snow_effect_intensity: 0.5
           scale_with_chance: true
 
-  cava:
-    type: "yasb.cava.CavaWidget"
+  audio_visualizer:
+    type: "yasb.audio_visualizer.AudioVisualizerWidget"
     options:
-      bar_height: 12
-      min_bar_height: 1
-      gradient: 0
-      reverse: 1
-      foreground: "#7d98f0"
-      bars_number: 18
-      bar_spacing: 0
-      bar_width: 6
-      noise_reduction: 50
-      sleep_timer: 2
-      hide_empty: false
+      style: bars
+      height: 16
+      smoothness: 80
+      sensitivity: 50
+      auto_gain: true
+      framerate: 60
+      freq_min: 100
+      freq_max: 20000
+      hide_idle: true
+      hide_idle_after: 2000
+      channels: mono
+      mono_option: average
+      reverse: false
+      mirror: false
+      bars:
+        count: 24
+        width: 4
+        gap: 0
+      waves:
+        width: 80
+      dots:
+        count: 24
+        size: 2
+        gap: 4
 
   media:
     type: "yasb.media.MediaWidget"
@@ -302,8 +317,8 @@ widgets:
         on_middle: "do_nothing"
         on_right: "do_nothing"
       max_field_size:
-        label: 45
-        label_alt: 30
+        label: 20
+        label_alt: 20
       show_thumbnail: false
       controls_only: false
       controls_left: true
